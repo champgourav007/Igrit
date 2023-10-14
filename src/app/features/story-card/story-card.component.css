@@ -1,0 +1,23 @@
+.content-head{
+    justify-content: center;
+    display: flex;
+    color: #5785cf;
+}
+.cards-head{
+    justify-content: center;
+    display: flex;
+    color: #5785cf;
+}
+.cards{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    background-color: #e6e7e8;
+}
+/* ::ng-deep{
+    .mat-card{
+        background-color:gold !important ;
+    }
+}  */

@@ -1,0 +1,28 @@
+.heading{
+    margin-top:10px;
+    color: #5785cf;
+}
+.heading:hover{
+    color: black;
+}
+.headingData{
+    margin-top: 10px;
+    color: black;
+}
+.mail{
+    margin-top: 50px;
+}
+.rule{
+    margin-top: 10px;
+    border-radius: 0px !important;
+}
+.container{
+    display: contents;
+    /* overflow-x: hidden; */
+    /* margin-top: 25px; */
+    /* width: 50%; */
+    /* background-image: url(../../../assets/svg/pngtree-the-background-of-sense-of-science-and-technology-in-information-technology-image_117255.jpg) ; */
+}
+.left{
+    padding-left: 90px;
+}

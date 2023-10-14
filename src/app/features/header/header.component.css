@@ -1,0 +1,36 @@
+.upper-head{
+    padding-top: 0.6%;
+    background-color: #5785cf;
+    padding-bottom: 0.6%;
+}
+.lower-head{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 70px;
+    background-color:  #FFFFFF;
+    /* -webkit-box-shadow:0px 1px 1px black;
+ -moz-box-shadow:0px 1px 1px black;
+ box-shadow:0px 1px 1px black; */
+}
+/* .set-image{
+
+} */
+.gap{
+    margin-right: 40px;
+    /* border: none !important; */
+    /* position: absolute; */
+
+    /* display: flex; */
+}
+.logo{
+    margin-right: 120px;
+}
+.fixed{
+    /* /* position: sticky; top: 0; */
+    display: contents;
+    
+}
+.right{
+    position: absolute;
+    left: 490px;
+}

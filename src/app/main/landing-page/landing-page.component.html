@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="head">
+        <div class="row">
+            <div class="col-6 left">
+                <h1 class="heading">Building a more inclusive world, one hire at a time.</h1>
+                <p class="headingData">
+                    Qween empowers women by providing them with the tools, resources, and support they need to succeed in their personal and professional lives. Through education, mentorship, and advocacy, we strive to create a more equitable and inclusive society where women can thrive and reach their full potential.
+                </p>
+                <br>
+                <mat-label class="mail">Join US</mat-label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="email" placeholder="Enter Email-ID" class="rule"/>
+                    </div>
+                    <div class="col-6">
+                        <button mat-raised-button style="color: #5785cf;right: 21px;
+                        top: 10px;" [disabled]="disableButton" (click)="openDialog()">LOGIN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <img style="width: 80%;" src="../../../assets/svg/frame-17-1024x576.jpeg">
+            </div>
+        </div>
+        <br>
+        <mat-divider></mat-divider>
+        <br>
+        <app-story-card></app-story-card>
+        <br>
+        <mat-divider></mat-divider>
+        <br>
+        <app-hiring-cards [content]="'hiring'"></app-hiring-cards>
+        <br>
+        <mat-divider></mat-divider>
+        <br>
+        <app-testimonal-cards></app-testimonal-cards>
+        <br>
+        <mat-divider></mat-divider>
+        <br>
+        <app-hiring-cards [content]="'empower'"></app-hiring-cards>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.lower{
+    padding-top: 10px;
+}
+.card-title{
+    color: white;
+}
+.card-text{
+    color: white;
+}
+.card{
+    background-image: url(../../../assets/svg/b966ab86d5dd7340e7e757e935d579af.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card-img-top{
+    border-radius: 50%;
+    clip-path: circle();
+    margin-top:-47px ;
+    height: 100px;
+}
+/* ::ng-deep{ */
+    .mat-mdc-tab .mdc-tab__text-label {
+        font-size: 25px;
+    }
+/* } */

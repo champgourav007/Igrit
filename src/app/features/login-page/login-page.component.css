@@ -1,0 +1,19 @@
+.rule{
+    margin-top: 15px;
+}
+.password{
+    margin-top: 15px;
+}
+.example-margin{
+    margin-top: 15px;
+}
+/* .loginButton{
+    margin-bottom: 15px;
+} */
+.register{
+    text-decoration: none;
+}
+.signUp{
+    justify-content: center;
+    display: flex;
+}

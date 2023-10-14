@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import 'mdb-angular-ui-kit/assets/scss/mdb.scss'; */
+
+button{
+    background: none;
+    border:none
+}
+input,
+select {
+  width: 100%;
+  height: 36px;
+  background-color: #f4f4f4;
+  border-radius: 18px;
+  border: none;
+  padding-left: 15px;
+  margin-top: 0px;
+}
+/* @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss'; */
+ 
+/* @import 'mdb-angular-ui-kit/assets/scss/mdb.scss'; */

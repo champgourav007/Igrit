@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="head">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start"
+        (selectedTabChange)="onRuleTypeChange($event)">
+        <mat-tab label="Recuiter Login"> </mat-tab>
+        <mat-tab label="User Login"></mat-tab>
+      </mat-tab-group>
+      <div class="userLogin" *ngIf="selectedTab==='user login'">
+        <form [formGroup]="userLoginForm">
+            <!-- <mat-label class="subHeading">Email ID<span class="star">*</span></mat-label> -->
+            <input type="email" formControlName="insurer_email" placeholder="Enter Email-ID" class="rule"/>
+            <input type="password" formControlName="password" placeholder="Enter Password" class="password"/>
+            <input type="password" formControlName="confirm_password" placeholder="Confirm Password" class="password"/>
+            <mat-checkbox class="example-margin" formControlName="termsChecked">By logging in, you agree to our Terms & Conditions & Privacy Policy.</mat-checkbox>
+            <div mat-dialog-actions class="loginButton">
+                <button mat-raised-button color="primary"  [disabled]="this.userLoginForm.invalid" (click)="onNoClick()">Login</button>
+                <button mat-raised-button color="primary" [mat-dialog-close]="" cdkFocusInitial>Cancel</button>
+            </div>
+        </form>
+      </div>
+      <div class="recuiterLogin" *ngIf="selectedTab==='recuiter login'">
+        <form [formGroup]="recuiterLoginForm">
+            <!-- <mat-label class="subHeading">Email ID<span class="star">*</span></mat-label> -->
+            <input type="email" formControlName="insurer_email" placeholder="Enter Email-ID" class="rule"/>
+            <input type="password" formControlName="password" placeholder="Enter Password" class="password"/>
+            <mat-checkbox class="example-margin" formControlName="termsChecked">By logging in, you agree to our Terms & Conditions & Privacy Policy.</mat-checkbox>
+            <div mat-dialog-actions class="loginButton">
+                <button mat-raised-button color="primary"  [disabled]="this.recuiterLoginForm.invalid" (click)="onNoClick()">Login</button>
+                <button mat-raised-button color="primary" [mat-dialog-close]="" cdkFocusInitial>Cancel</button>
+            </div>
+        </form>
+        <div class="signUp">
+            <a class="register" href="">Don't have an account? Register Now</a>
+            
+        </div>
+      </div>
+    </div>
+</div>
+
