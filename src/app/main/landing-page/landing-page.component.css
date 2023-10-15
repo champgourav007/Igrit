@@ -17,6 +17,7 @@
     border-radius: 0px !important;
 }
 .container{
+    width: 100%;
     display: contents;
     /* overflow-x: hidden; */
     /* margin-top: 25px; */
@@ -24,5 +25,8 @@
     /* background-image: url(../../../assets/svg/pngtree-the-background-of-sense-of-science-and-technology-in-information-technology-image_117255.jpg) ; */
 }
 .left{
-    padding-left: 90px;
+    padding-left: 128px;
+}
+.low{
+    margin-top: 20px;
 }

@@ -2,12 +2,14 @@
     padding-top: 0.6%;
     background-color: #5785cf;
     padding-bottom: 0.6%;
+    padding-left: 40px;
 }
 .lower-head{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 70px;
     background-color:  #FFFFFF;
+    border-bottom: black;
     /* -webkit-box-shadow:0px 1px 1px black;
  -moz-box-shadow:0px 1px 1px black;
  box-shadow:0px 1px 1px black; */
@@ -28,9 +30,9 @@
 .fixed{
     /* /* position: sticky; top: 0; */
     display: contents;
-    
+
 }
 .right{
     position: absolute;
-    left: 490px;
+    left: 560px;
 }
