@@ -1,0 +1,16 @@
+.head{
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+    padding-bottom: 10px;
+}
+.container{
+    background-image: url(../../../assets/svg/Picture3.jpg);
+
+}
+p{
+    color: black;
+}
+h6{
+    color: black !important;
+}

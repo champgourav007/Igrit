@@ -10,7 +10,7 @@ import { FeaturesModule } from '../features/features.module';
 
 @NgModule({
   declarations: [
-    LandingPageComponent
+    LandingPageComponent,
   ],
   imports: [
     CommonModule,

@@ -9,6 +9,10 @@ import { StoryCardComponent } from './story-card/story-card.component';
 import { HiringCardsComponent } from './hiring-cards/hiring-cards.component';
 import { FooterComponent } from './footer/footer.component';
 import { TestimonalCardsComponent } from './testimonal-cards/testimonal-cards.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { AssociatedCompainesComponent } from './associated-compaines/associated-compaines.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 @NgModule({
@@ -18,14 +22,19 @@ import { TestimonalCardsComponent } from './testimonal-cards/testimonal-cards.co
     StoryCardComponent,
     HiringCardsComponent,
     FooterComponent,
-    TestimonalCardsComponent
+    TestimonalCardsComponent,
+    AboutUsComponent,
+    AssociatedCompainesComponent,
   ],
   imports: [
+    // RouterModule.forChild(),
     CommonModule,
     MaterialModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgImageSliderModule,
+    // AboutUsComponent
   ],
   exports:[
     HeaderComponent,
@@ -33,7 +42,9 @@ import { TestimonalCardsComponent } from './testimonal-cards/testimonal-cards.co
     StoryCardComponent,
     HiringCardsComponent,
     FooterComponent,
-    TestimonalCardsComponent
+    TestimonalCardsComponent,
+    AboutUsComponent,
+    AssociatedCompainesComponent
   ]
 })
 export class FeaturesModule { }

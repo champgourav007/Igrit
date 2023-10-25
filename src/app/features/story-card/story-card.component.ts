@@ -21,25 +21,25 @@ export class StoryCardComponent implements OnInit {
   increaseNumber(){
     const joinedNetworkStop:any=setInterval(() => {
       this.joinedNetwork++;
-      if(this.joinedNetwork==500){
+      if(this.joinedNetwork==100){
         clearInterval(joinedNetworkStop)
       }
     },10);
     const totalExperienceStop:any=setInterval(() => {
       this.totalExperience++;
-      if(this.totalExperience==5){
+      if(this.totalExperience==8){
         clearInterval(totalExperienceStop)
       }
     }, 10);
     const totalDiversityStop:any=setInterval(() => {
       this.totalDiversity=this.totalDiversity+10;
-      if(this.totalDiversity==2500){
+      if(this.totalDiversity==1000){
         clearInterval(totalDiversityStop)
       }
     }, 10);
     const totalClientsStop:any=setInterval(() => {
       this.totalClients++;
-      if(this.totalClients==150){
+      if(this.totalClients==100){
         clearInterval(totalClientsStop)
       }
     }, 10);

@@ -1,3 +1,34 @@
 h6{
     color: #5785cf;
 }
+.hidden{
+    color: white;
+}
+.fa {
+    padding: 20px;  padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+.fa-instagram {
+    /* background: #125688; */
+    color: white;
+    background: linear-gradient(135deg, #833AB4, #E1306C);
+}

@@ -4,7 +4,11 @@
             <div class="col-6 left">
                 <h1 class="heading">Building a more inclusive world, one hire at a time.</h1>
                 <p class="headingData">
-                    Qween empowers women by providing them with the tools, resources, and support they need to succeed in their personal and professional lives. Through education, mentorship, and advocacy, we strive to create a more equitable and inclusive society where women can thrive and reach their full potential.
+                    iGrit Technovations hence, ITS is a leading innovator in the BPM industry, dedicated to streamlining and optimizing business processes for organizations worldwide. Our cutting-edge software and expert consulting services empower businesses to achieve greater efficiency, agility, and productivity. With a relentless commitment to excellence, we help our clients navigate the complex landscape of modern business, driving growth and success through process excellence.“
+                </p>
+                <p class="headingData">
+                    ITS is a pioneering company dedicated to fostering diversity and inclusion in every aspect of business and society. We empower organizations to embrace differences, celebrate unique perspectives, and create an inclusive environment where all individuals can thrive. Through innovative programs, education, and consulting, we help build more equitable, harmonious, and successful communities where everyone has a voice and a place at the table."
+
                 </p>
                 <br>
                 <mat-label class="mail">Join US</mat-label>
@@ -13,13 +17,18 @@
                         <input type="email" placeholder="Enter Email-ID" class="rule"/>
                     </div>
                     <div class="col-6">
-                        <button mat-raised-button style="color: #5785cf;right: 21px;
+                        <button mat-raised-button style="color: #5785cf;right: -70px;
                         top: 10px;" [disabled]="disableButton" (click)="openDialog()">LOGIN</button>
                     </div>
                 </div>
+                <br>
+                <h5>Biggest Networking Platform for Freelancers - Refer Talents
+                    Grab Successful Hiring Amounts : Rs. 10K to 100K
+                </h5>
             </div>
             <div class="col-6">
-                <img style="width: 80%; margin-left: 35px;" src="../../../assets/svg/frame-17-1024x576.jpeg">
+                <!-- <img style="width: 80%; margin-left: 35px;" src="../../../assets/svg/frame-17-1024x576.jpeg"> -->
+                <img style="width: 80%; margin-left: 35px;" src="../../../assets/svg/landing-photo.jpg">
             </div>
         </div>
         <br>
@@ -29,7 +38,11 @@
         <br>
         <mat-divider></mat-divider>
         <br>
-        <app-hiring-cards [content]="'hiring'"></app-hiring-cards>
+        <app-associated-compaines></app-associated-compaines>
+        <br>
+        <mat-divider></mat-divider>
+        <br>
+        <app-hiring-cards [content]="'empower'"></app-hiring-cards>
         <br>
         <mat-divider></mat-divider>
         <br>
@@ -37,6 +50,6 @@
         <br>
         <mat-divider></mat-divider>
         <br>
-        <app-hiring-cards [content]="'empower'"></app-hiring-cards>
+        <app-hiring-cards [content]="'hiring'"></app-hiring-cards>
     </div>
 </div>
