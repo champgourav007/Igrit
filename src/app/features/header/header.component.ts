@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginPageComponent } from '../login-page/login-page.component';
+import { Route, Router } from '@angular/router';
+import { AboutUsComponent } from '../about-us/about-us.component';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +12,7 @@ import { LoginPageComponent } from '../login-page/login-page.component';
 export class HeaderComponent implements OnInit {
   disableButton = false;
 
-  constructor(public dialog: MatDialog){}
+  constructor(public dialog: MatDialog,private router:Router){}
 
   ngOnInit(): void {
     
@@ -31,5 +33,15 @@ export class HeaderComponent implements OnInit {
     });
       this.disableButton= true;
     }
+  }
+  openAboutUs(){
+    let dialogReff = this.dialog.open(AboutUsComponent, {
+      width:'800px', height:'500px',position:{
+
+      }
+    });
+    dialogReff.afterClosed().subscribe(result=>{
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }

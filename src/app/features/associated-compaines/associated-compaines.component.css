@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+}
+.heading{
+    color: #5785cf;
+}
+.heading:hover{
+    color: black;
+}

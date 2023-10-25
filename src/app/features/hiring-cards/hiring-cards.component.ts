@@ -30,7 +30,7 @@ export class HiringCardsComponent implements OnInit {
       console.log('fhfh',this.heading);
     }
     if(this.content=='empower'){
-      this.heading='How ____ Empowers ____';
+      this.heading='How iGrit Empowers You';
       this.card_1_head='EXPLORE JOBS';
       this.card_1_body='Looking for a flexible job that suits your preferences? Let us help you find it.';
       this.card_2_head='UPSKILLS';
