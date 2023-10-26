@@ -1,12 +1,15 @@
 <div class="container">
     <h1 class="heading">Associated Compaines</h1>
     <br>
-    <div style="width: 83rem; height: 250px; text-align:center;margin:0; padding:0;">
-        <ng-image-slider #nav
+    <div class="slider-container" style="width: 83rem; height: 250px; text-align:center;margin:0; padding:0;" [@slideAnimation]="currentImageIndex">
+        <!-- <ng-image-slider #nav
           [images]="imageObject"
           [infinite]="true"
           [autoSlide]="1"
           [imageSize]="{width: '25%', height: 200}"
-          slideImage="1"></ng-image-slider>
+          slideImage="1"></ng-image-slider> -->
+          <!-- <div class="slider-container" > -->
+              <img *ngFor="let image of images" [src]="'assets/images/' + image" alt="Slide">
+          <!-- </div> -->
       </div>
 </div>

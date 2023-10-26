@@ -1,11 +1,54 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { trigger, transition, animate, style } from '@angular/animations';
+
 
 @Component({
   selector: 'app-associated-compaines',
   templateUrl: './associated-compaines.component.html',
-  styleUrls: ['./associated-compaines.component.css']
+  styleUrls: ['./associated-compaines.component.css'],
+  animations: [
+    trigger('slideAnimation', [
+      transition('void => *', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('500ms ease-in-out'),
+      ]),
+      transition('* => void', [
+        animate('500ms ease-in-out', style({ transform: 'translateX(100%)' })),
+      ]),
+    ]),
+  ],
 })
-export class AssociatedCompainesComponent {
+
+export class AssociatedCompainesComponent implements OnInit {
+  images: string[] = 
+  [
+    // '../../../assets/svg/mumusosvg.svg',
+    'https://asset.brandfetch.io/idaAonmqEO/idEwHbhW9N.png', 
+    '../../../assets/svg/Medkart_logo_link_preview.png',
+    '../../../assets/svg/justdial-seeklogo.com.svg', 
+    'https://asset.brandfetch.io/idG8419ceE/idvn_MUTNd.svg',
+    '../../../assets/svg/dawaa-dost-making-drugs-more-accessible-and-affordable.jpg',
+    '../../../assets/svg/cardekho.jpg',
+    '../../../assets/svg/sankalp.jfif',
+  ];
+  currentImageIndex: number = 0;
+
+  ngOnInit(): void {
+    this.startImageSlider();
+  }
+
+  startImageSlider() {
+    setInterval(() => {
+      this.nextImage();
+    }, 1000); // Change slide every 3 seconds (adjust as needed)
+  }
+
+  nextImage() {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+  }
+
+
+
   imageObject = [
     {
       image: '../../../assets/svg/mumusosvg.svg',
