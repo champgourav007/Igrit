@@ -7,3 +7,14 @@ h1{
 .heading:hover{
     color: black;
 }
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  img {
+    width: fit-content;
+    object-fit: cover;
+  }

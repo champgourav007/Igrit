@@ -12,7 +12,7 @@ import { TestimonalCardsComponent } from './testimonal-cards/testimonal-cards.co
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AssociatedCompainesComponent } from './associated-compaines/associated-compaines.component';
-import { NgImageSliderModule } from 'ng-image-slider';
+// import { NgImageSliderModule } from 'ng-image-slider';
 
 
 @NgModule({
@@ -33,7 +33,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    NgImageSliderModule,
+    // NgImageSliderModule,
     // AboutUsComponent
   ],
   exports:[

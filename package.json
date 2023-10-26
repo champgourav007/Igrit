@@ -29,7 +29,6 @@
     "jquery": "^3.7.1",
     "mdb-angular-ui-kit": "^5.1.0",
     "mdb-ui-kit": "^6.4.2",
-    "ng-image-slider": "^7.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
