@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { LoginPageComponent } from '../login-page/login-page.component';
 import { Route, Router } from '@angular/router';
 import { AboutUsComponent } from '../about-us/about-us.component';
+import { JobsPageComponent } from '../jobs-page/jobs-page.component';
+import { EmployersCardComponent } from '../employers-card/employers-card.component';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +14,7 @@ import { AboutUsComponent } from '../about-us/about-us.component';
 export class HeaderComponent implements OnInit {
   disableButton = false;
 
-  constructor(public dialog: MatDialog,private router:Router){}
+  constructor(public dialog: MatDialog,private router:Router,){}
 
   ngOnInit(): void {
     
@@ -36,6 +38,29 @@ export class HeaderComponent implements OnInit {
   }
   openAboutUs(){
     let dialogReff = this.dialog.open(AboutUsComponent, {
+      width:'800px', height:'500px',position:{
+
+      }
+    });
+    dialogReff.afterClosed().subscribe(result=>{
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+  toJobs(){
+    // this.router.navigate(['/jobs']);
+    let dialogReff = this.dialog.open(JobsPageComponent, {
+      width:'800px', height:'500px',position:{
+
+      }
+    });
+    dialogReff.afterClosed().subscribe(result=>{
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  toEmployers(){
+    // this.router.navigate(['/jobs']);
+    let dialogReff = this.dialog.open(EmployersCardComponent, {
       width:'800px', height:'500px',position:{
 
       }

@@ -1,0 +1,9 @@
+.heading{
+    margin-top:10px;
+    color: #5785cf;
+    padding-bottom: 6px;
+    padding-left: 10px;
+}
+.heading:hover{
+    color: black;
+}
