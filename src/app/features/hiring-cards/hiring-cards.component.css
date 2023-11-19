@@ -19,6 +19,7 @@
     clip-path: circle();
     margin-top:-47px ;
     height: 100px;
+    object-fit: contain;
 }
 /* ::ng-deep{ */
     .mat-mdc-tab .mdc-tab__text-label {

@@ -12,8 +12,19 @@ import { TestimonalCardsComponent } from './testimonal-cards/testimonal-cards.co
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AssociatedCompainesComponent } from './associated-compaines/associated-compaines.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { JobsPageComponent } from './jobs-page/jobs-page.component';
+import { EmployersCardComponent } from './employers-card/employers-card.component'
+// import { TableComponent } from './table/table.component';
+// import { MatCheckboxModule } from '@angular/material/checkbox';
 // import { NgImageSliderModule } from 'ng-image-slider';
 
+
+const routes: Routes = [
+  {
+    path: 'jobs', component: JobsPageComponent,
+  }
+]
 
 @NgModule({
   declarations: [
@@ -25,6 +36,9 @@ import { AssociatedCompainesComponent } from './associated-compaines/associated-
     TestimonalCardsComponent,
     AboutUsComponent,
     AssociatedCompainesComponent,
+    JobsPageComponent,
+    EmployersCardComponent,
+    // TableComponent
   ],
   imports: [
     // RouterModule.forChild(),
@@ -33,6 +47,9 @@ import { AssociatedCompainesComponent } from './associated-compaines/associated-
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
+    // BrowserAnimationsModule,
+    RouterModule,
+    // MatCheckboxModule
     // NgImageSliderModule,
     // AboutUsComponent
   ],
@@ -44,7 +61,11 @@ import { AssociatedCompainesComponent } from './associated-compaines/associated-
     FooterComponent,
     TestimonalCardsComponent,
     AboutUsComponent,
-    AssociatedCompainesComponent
-  ]
+    AssociatedCompainesComponent,
+    JobsPageComponent,
+    EmployersCardComponent
+    // TableComponent
+  ],
+  
 })
 export class FeaturesModule { }

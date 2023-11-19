@@ -25,13 +25,13 @@
  </div>
  <div class="row lower-head">
     <div class="col-3">
-        <!-- <span class="logo">LOGO HERE</span> -->
         <img class="logo" src="../../../assets/svg/Logo.jpg">
+        <span class="logoHead">Igrit Technovation</span>
     </div>
         <div class="col-9 right">
-        <button mat-button class="gap">JOBS</button>
+        <button mat-button class="gap" (click)="toJobs()">JOBS</button>
         <button mat-button class="gap">Industry</button>
-        <button mat-button class="gap">Employers</button>
+        <button mat-button class="gap" (click)="toEmployers()">Employers</button>
         <button mat-button class="gap">Refferals</button>
         <button mat-button class="gap">Resources</button>
         <button mat-button class="gap" (click)="openAboutUs()">About Us</button>

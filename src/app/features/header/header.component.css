@@ -40,3 +40,16 @@
     padding-left: 12rem;
     padding-top: 0.5rem;
 }
+.logoHead{
+    position: absolute;
+    left: 12rem;
+    top: 5rem;
+    color: #5785cf;
+}
+.logoHead:hover{
+    color: black;
+}
+.fixed{
+    font-family: Arial, Helvetica, sans-serif ;
+  /* src: url('../src/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') */
+}
